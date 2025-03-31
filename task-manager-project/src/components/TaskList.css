@@ -1,0 +1,87 @@
+.filter {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.filter select {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter select:hover {
+  border-color: #007bff;
+  box-shadow: 0 0 5px #007bff;
+}
+
+.filter select:focus {
+  outline: none;
+  border-color: #0056b3;
+}
+
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 10px;
+}
+
+.task-item {
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.task-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.task-item.completed {
+  background: #d4edda;
+  border-left: 5px solid #28a745;
+}
+.task-item.pending {
+  background: #f8d7da;
+  border-left: 5px solid #dc3545;
+}
+
+
+.task-item h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.task-item p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.task-item input[type='checkbox'] {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.task-item button {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.task-item button:hover {
+  background: #ff1a1a;
+}

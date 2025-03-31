@@ -1,0 +1,32 @@
+.dark-mode-toggle {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+}
+
+.dark-mode-toggle button {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #5f6c7a;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.dark-mode-toggle button:hover {
+  background: #20374e;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+body.dark {
+  background: #1e1e1e;
+  color: #f0f0f0;
+  transition: background 0.3s, color 0.3s;
+}
+body {
+  background: #ffffff;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
